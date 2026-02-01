@@ -1,0 +1,88 @@
+/* =========================
+   FolderDataSource – BASE
+========================= */
+.fds-container {
+  width: 100%;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+
+  display: flex;
+  gap: 16px;
+}
+
+.fds-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.fds-field label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.fds-field select {
+  appearance: none;
+  padding: 10px 12px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+/* =========================
+   FolderDataSource – LIGHT
+========================= */
+.fds-light {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.fds-light .fds-field label {
+  color: #374151;
+}
+
+.fds-light .fds-field select {
+  background: #ffffff;
+  color: #111827;
+  border-color: #d1d5db;
+}
+
+.fds-light .fds-field select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.fds-light .fds-field select:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+}
+/* =========================
+   FolderDataSource – DARK
+========================= */
+.fds-dark {
+  background: #2b2738;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.fds-dark .fds-field label {
+  color: #e5e7eb;
+}
+
+.fds-dark .fds-field select {
+  background: #1f1b2e;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.fds-dark .fds-field select:focus {
+  border-color: #7c63ff;
+  box-shadow: 0 0 0 2px rgba(124, 99, 255, 0.35);
+}
+
+.fds-dark .fds-field select:disabled {
+  background: #2f2a42;
+  color: #9ca3af;
+}

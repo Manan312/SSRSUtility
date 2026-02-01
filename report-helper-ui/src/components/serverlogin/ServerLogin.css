@@ -1,0 +1,140 @@
+/* =========================
+   BASE
+========================= */
+.server-login-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: flex-start; /* 🔥 TOP aligned */
+  padding-top: 24px; /* spacing from header */
+}
+
+.server-login-card {
+  width: 100%;
+  min-height: 520px;
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.server-login-card h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 24px;
+}
+
+/* INPUTS */
+.server-login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.eye-btn {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* CHECKBOX */
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+/* BUTTON */
+.connect-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.connect-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* =========================
+     DARK THEME
+  ========================= */
+.server-login-dark {
+  background: #2b2738;
+  color: white;
+}
+
+.server-login-dark .server-login-card {
+  background: #2b2738;
+  border: 1px solid #e2e8f0;
+}
+
+.server-login-dark input {
+  background: #3a354d;
+  color: white;
+}
+
+.server-login-dark .eye-btn {
+  color: white;
+}
+
+.server-login-dark .connect-btn {
+  background: #7c63ff;
+  color: white;
+}
+
+.server-login-dark .connect-btn:hover {
+  background: #6a55e6;
+}
+
+/* =========================
+     LIGHT THEME
+  ========================= */
+.server-login-light {
+  background: #ffffff;
+  color: #1e3a8a;
+}
+
+.server-login-light .server-login-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.server-login-light input {
+  background: #eef2ff;
+  color: #1e3a8a;
+}
+
+.server-login-light .eye-btn {
+  color: #1e3a8a;
+}
+
+.server-login-light .connect-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.server-login-light .connect-btn:hover {
+  background: #1d4ed8;
+}
